@@ -1,0 +1,233 @@
+
+/* ==========================================
+   SIMKUR SMP - DASHBOARD WIDGETS
+   ========================================== */
+
+/* STATISTIC CARDS */
+
+.stat-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+  min-height: 145px;
+  padding: 18px;
+  overflow: hidden;
+  border: 1px solid var(--simkur-border);
+  border-radius: var(--simkur-radius);
+  background: white;
+  box-shadow: var(--simkur-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 18px rgba(23, 59, 104, 0.10);
+}
+
+.stat-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.stat-card-icon {
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 11px;
+  background: var(--simkur-blue-light);
+  color: var(--simkur-blue);
+}
+
+.stat-card-caption {
+  font-size: 10px;
+  color: var(--simkur-muted);
+  text-align: right;
+}
+
+.stat-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 17px;
+}
+
+.stat-card-title {
+  font-size: 12px;
+  color: var(--simkur-muted);
+}
+
+.stat-card-value {
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--simkur-navy);
+  overflow-wrap: anywhere;
+}
+
+.stat-green .stat-card-icon {
+  background: #E8F5EF;
+  color: #23845B;
+}
+
+.stat-orange .stat-card-icon {
+  background: #FFF3E3;
+  color: #C17B19;
+}
+
+.stat-purple .stat-card-icon {
+  background: #F0ECFA;
+  color: #7657B8;
+}
+
+/* DONUT CHART CARD */
+
+.donut-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 310px;
+  padding: 18px;
+  border: 1px solid var(--simkur-border);
+  border-radius: var(--simkur-radius);
+  background: white;
+  box-shadow: var(--simkur-shadow);
+}
+
+.donut-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.donut-card-header h3 {
+  font-size: 14px;
+  font-weight: 750;
+  color: var(--simkur-navy);
+}
+
+.donut-card-header p {
+  margin-top: 4px;
+  font-size: 10px;
+  color: var(--simkur-muted);
+}
+
+.donut-menu {
+  padding: 3px 7px;
+  border-radius: 6px;
+  background: var(--simkur-background);
+  color: var(--simkur-muted);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.donut-chart-area {
+  position: relative;
+  width: 100%;
+  height: 175px;
+  margin: 10px auto 4px;
+}
+
+.donut-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.donut-center strong {
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--simkur-navy);
+}
+
+.donut-center span {
+  margin-top: 3px;
+  font-size: 10px;
+  color: var(--simkur-muted);
+}
+
+.donut-empty {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  color: var(--simkur-muted);
+  font-size: 11px;
+  text-align: center;
+}
+
+.donut-legend {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 13px;
+  margin-top: 5px;
+  padding-top: 12px;
+  border-top: 1px solid var(--simkur-border);
+}
+
+.donut-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+}
+
+.donut-legend-dot {
+  width: 9px;
+  height: 9px;
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+
+.donut-legend-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  color: var(--simkur-muted);
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.donut-legend-value {
+  color: var(--simkur-text);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+  .stat-card {
+    min-height: 125px;
+    padding: 13px;
+  }
+
+  .stat-card-value {
+    font-size: 23px;
+  }
+
+  .donut-card {
+    padding: 14px;
+  }
+
+  .donut-chart-area {
+    height: 165px;
+  }
+
+  .donut-legend {
+    gap: 9px;
+  }
+}

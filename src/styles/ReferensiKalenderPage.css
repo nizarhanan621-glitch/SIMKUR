@@ -1,0 +1,1088 @@
+
+/* ==========================================
+   SIMKUR SMP
+   REFERENSI KALENDER PENDIDIKAN
+   VISUAL SYSTEM V3.0
+   ========================================== */
+
+.reference-calendar-page {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  width: 100%;
+  min-width: 0;
+}
+
+/* ==========================================
+   HEADER HALAMAN
+   ========================================== */
+
+.reference-calendar-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.reference-calendar-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
+  color: var(--simkur-muted);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.reference-calendar-heading h2 {
+  color: var(--simkur-navy);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.reference-calendar-heading p {
+  margin-top: 6px;
+  color: var(--simkur-muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.reference-year-control {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 155px;
+}
+
+.reference-year-control label {
+  color: var(--simkur-muted);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+}
+
+.reference-year-control select {
+  min-height: 39px;
+  padding: 0 12px;
+  border: 1px solid var(--simkur-border);
+  border-radius: 8px;
+  outline: none;
+  background: white;
+  color: var(--simkur-navy);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.reference-year-control select:focus {
+  border-color: var(--simkur-blue);
+  box-shadow: 0 0 0 3px rgba(40, 120, 200, 0.09);
+}
+
+/* ==========================================
+   BANNER REFERENSI
+   ========================================== */
+
+.reference-calendar-banner {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-height: 105px;
+  padding: 18px 20px;
+  border: 1px solid #D6E5F4;
+  border-radius: 13px;
+  background: linear-gradient(
+    110deg,
+    #EAF2FA 0%,
+    #F6FAFE 65%,
+    #FFFFFF 100%
+  );
+  box-shadow: var(--simkur-shadow);
+}
+
+.reference-banner-icon {
+  display: grid;
+  place-items: center;
+  width: 53px;
+  height: 53px;
+  flex-shrink: 0;
+  border-radius: 13px;
+  background: var(--simkur-navy);
+  color: white;
+}
+
+.reference-calendar-banner > div:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+
+.reference-calendar-banner > div:nth-child(2) > span {
+  color: var(--simkur-blue);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.reference-calendar-banner h3 {
+  margin-top: 3px;
+  color: var(--simkur-navy);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.reference-calendar-banner p {
+  margin-top: 4px;
+  color: var(--simkur-muted);
+  font-size: 10px;
+}
+
+.reference-banner-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 11px;
+  border: 1px solid #E9DDBD;
+  border-radius: 20px;
+  background: #FFF9EC;
+  color: #A36B17;
+  font-size: 9px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.reference-banner-status span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #D59A37;
+}
+
+/* ==========================================
+   GRID FORM DAN RINGKASAN
+   ========================================== */
+
+.reference-calendar-grid {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.5fr)
+    minmax(280px, 0.85fr);
+  gap: 15px;
+  align-items: stretch;
+}
+
+.reference-panel {
+  min-width: 0;
+  padding: 19px;
+  border: 1px solid var(--simkur-border);
+  border-radius: var(--simkur-radius);
+  background: white;
+  box-shadow: var(--simkur-shadow);
+}
+
+/* ==========================================
+   PANEL HEADER
+   ========================================== */
+
+.reference-panel-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E9EFF5;
+  color: var(--simkur-blue);
+}
+
+.reference-panel-heading h3 {
+  color: var(--simkur-navy);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.reference-panel-heading p {
+  margin-top: 5px;
+  color: var(--simkur-muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* ==========================================
+   FORM DOKUMEN
+   ========================================== */
+
+.reference-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 17px;
+}
+
+.reference-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.reference-field label {
+  color: var(--simkur-navy);
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.reference-field input,
+.reference-field select,
+.reference-field textarea {
+  width: 100%;
+  min-width: 0;
+  min-height: 39px;
+  padding: 9px 11px;
+  border: 1px solid var(--simkur-border);
+  border-radius: 8px;
+  outline: none;
+  background: #FFFFFF;
+  color: var(--simkur-text);
+  font-size: 10px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reference-field input::placeholder,
+.reference-field textarea::placeholder {
+  color: #9AA8B8;
+}
+
+.reference-field input:focus,
+.reference-field select:focus,
+.reference-field textarea:focus {
+  border-color: var(--simkur-blue);
+  box-shadow: 0 0 0 3px rgba(40, 120, 200, 0.08);
+}
+
+.reference-field textarea {
+  min-height: 80px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.reference-input-icon {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 39px;
+  padding-left: 11px;
+  border: 1px solid var(--simkur-border);
+  border-radius: 8px;
+  background: white;
+  color: var(--simkur-muted);
+}
+
+.reference-input-icon:focus-within {
+  border-color: var(--simkur-blue);
+  box-shadow: 0 0 0 3px rgba(40, 120, 200, 0.08);
+}
+
+.reference-input-icon input {
+  flex: 1;
+  min-width: 0;
+  padding-left: 0;
+  border: 0;
+  box-shadow: none !important;
+}
+
+.reference-input-icon input:focus {
+  border: 0;
+  outline: none;
+}
+
+/* ==========================================
+   UPLOAD DOKUMEN
+   ========================================== */
+
+.reference-upload-area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  min-height: 130px;
+  padding: 16px;
+  border: 1.5px dashed #9CBAD7;
+  border-radius: 10px;
+  background: #F7FAFE;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reference-upload-area:hover {
+  border-color: var(--simkur-blue);
+  background: var(--simkur-blue-light);
+}
+
+.reference-upload-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: #EAF2FA;
+  color: var(--simkur-blue);
+}
+
+.reference-upload-area strong {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  color: var(--simkur-navy);
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.reference-upload-area small {
+  color: var(--simkur-muted);
+  font-size: 9px;
+}
+
+.reference-remove-file {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 6px;
+  padding: 6px 9px;
+  border: 0;
+  border-radius: 7px;
+  background: #FFF1F1;
+  color: var(--simkur-danger);
+  font-size: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reference-remove-file:hover {
+  background: #FCE1E1;
+}
+
+/* ==========================================
+   NOTIFIKASI FORM
+   ========================================== */
+
+.reference-form-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 11px;
+  border: 1px solid #D9E9F7;
+  border-radius: 8px;
+  background: #F4F8FD;
+  color: #53779D;
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+.reference-form-note svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: var(--simkur-blue);
+}
+
+/* ==========================================
+   PANEL RINGKASAN
+   ========================================== */
+
+.reference-summary-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.reference-summary-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 8px;
+}
+
+.reference-summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px 0;
+  border-bottom: 1px solid #EDF1F5;
+}
+
+.reference-summary-item:last-child {
+  border-bottom: 0;
+}
+
+.reference-summary-item span {
+  color: var(--simkur-muted);
+  font-size: 9px;
+}
+
+.reference-summary-item strong {
+  overflow-wrap: anywhere;
+  color: var(--simkur-navy);
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.reference-summary-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 13px;
+  padding: 12px;
+  border: 1px solid #D9E9F7;
+  border-radius: 8px;
+  background: #F4F8FD;
+  color: #53779D;
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+.reference-summary-notice svg {
+  flex-shrink: 0;
+  color: var(--simkur-blue);
+}
+
+/* ==========================================
+   BUTIR KALENDER
+   ========================================== */
+
+.reference-items-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reference-primary-button,
+.reference-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 37px;
+  padding: 9px 13px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 750;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.reference-primary-button {
+  background: var(--simkur-blue);
+  color: white;
+}
+
+.reference-primary-button:hover {
+  background: var(--simkur-navy);
+}
+
+.reference-secondary-button {
+  border-color: var(--simkur-border);
+  background: white;
+  color: var(--simkur-navy);
+}
+
+.reference-secondary-button:hover {
+  border-color: var(--simkur-blue);
+  color: var(--simkur-blue);
+}
+
+/* FORM TAMBAH BUTIR */
+
+.reference-item-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  padding: 17px;
+  border: 1px solid #D8E6F4;
+  border-radius: 11px;
+  background: #F8FBFE;
+}
+
+.reference-field-wide {
+  grid-column: 1 / -1;
+}
+
+.reference-form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+  grid-column: 1 / -1;
+}
+
+/* ==========================================
+   TOOLBAR TABEL
+   ========================================== */
+
+.reference-items-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.reference-items-search {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: min(100%, 350px);
+  min-height: 37px;
+  padding: 0 11px;
+  border: 1px solid var(--simkur-border);
+  border-radius: 8px;
+  background: white;
+  color: var(--simkur-muted);
+}
+
+.reference-items-search:focus-within {
+  border-color: var(--simkur-blue);
+  box-shadow: 0 0 0 3px rgba(40, 120, 200, 0.08);
+}
+
+.reference-items-search input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  color: var(--simkur-text);
+  background: transparent;
+  font-size: 10px;
+}
+
+.reference-items-search input::placeholder {
+  color: #9AA8B8;
+}
+
+.reference-items-toolbar > span {
+  color: var(--simkur-muted);
+  font-size: 9px;
+}
+
+/* ==========================================
+   TABEL
+   ========================================== */
+
+.reference-items-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--simkur-border);
+  border-radius: 9px;
+}
+
+.reference-items-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.reference-items-table thead {
+  background: #EFF4F9;
+}
+
+.reference-items-table th {
+  padding: 12px 13px;
+  border-bottom: 1px solid var(--simkur-border);
+  color: var(--simkur-navy);
+  font-size: 9px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.reference-items-table td {
+  padding: 12px 13px;
+  border-bottom: 1px solid #EDF1F5;
+  color: var(--simkur-text);
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.reference-items-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.reference-items-table tbody tr:hover {
+  background: #F8FBFE;
+}
+
+.reference-items-table td strong {
+  color: var(--simkur-navy);
+  font-size: 10px;
+}
+
+.reference-category-badge {
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 6px;
+  background: var(--simkur-blue-light);
+  color: var(--simkur-blue);
+  font-size: 8px;
+  font-weight: 750;
+}
+
+.reference-delete-button {
+  display: grid;
+  place-items: center;
+  width: 31px;
+  height: 31px;
+  border: 0;
+  border-radius: 7px;
+  background: #FFF1F1;
+  color: var(--simkur-danger);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.reference-delete-button:hover {
+  background: #FCE0E0;
+}
+
+/* TABEL KOSONG */
+
+.reference-empty {
+  height: 170px;
+  text-align: center;
+}
+
+.reference-empty svg {
+  display: block;
+  margin: 0 auto 9px;
+  color: #9BB2C9;
+}
+
+.reference-empty strong,
+.reference-empty span {
+  display: block;
+}
+
+.reference-empty strong {
+  color: var(--simkur-navy);
+  font-size: 11px;
+}
+
+.reference-empty span {
+  margin-top: 5px;
+  color: var(--simkur-muted);
+  font-size: 9px;
+}
+
+/* ==========================================
+   CATATAN BAWAH
+   ========================================== */
+
+.reference-calendar-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 11px 14px;
+  border: 1px solid #D4E5F5;
+  border-radius: 9px;
+  background: #F4F8FD;
+  color: var(--simkur-blue);
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+.reference-calendar-note svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ==========================================
+   RESPONSIVE TABLET
+   ========================================== */
+
+@media (max-width: 1050px) {
+  .reference-calendar-grid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(250px, 0.8fr);
+  }
+
+  .reference-item-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 850px) {
+  .reference-calendar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reference-summary-panel {
+    min-height: 0;
+  }
+
+  .reference-summary-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 20px;
+  }
+}
+
+/* ==========================================
+   RESPONSIVE MOBILE
+   ========================================== */
+
+@media (max-width: 600px) {
+  .reference-calendar-page {
+    gap: 14px;
+  }
+
+  .reference-calendar-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .reference-calendar-heading h2 {
+    font-size: 19px;
+  }
+
+  .reference-year-control {
+    width: 100%;
+  }
+
+  .reference-calendar-banner {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 14px;
+  }
+
+  .reference-banner-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .reference-calendar-banner h3 {
+    font-size: 15px;
+  }
+
+  .reference-banner-status {
+    margin-left: 59px;
+  }
+
+  .reference-panel {
+    padding: 14px;
+  }
+
+  .reference-panel-heading {
+    align-items: flex-start;
+  }
+
+  .reference-panel-heading h3 {
+    font-size: 13px;
+  }
+
+  .reference-panel-heading > button {
+    padding: 8px;
+    font-size: 9px;
+  }
+
+  .reference-summary-list {
+    grid-template-columns: 1fr;
+  }
+
+  .reference-item-form {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 13px;
+  }
+
+  .reference-field-wide {
+    grid-column: auto;
+  }
+
+  .reference-form-actions {
+    grid-column: auto;
+  }
+
+  .reference-items-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .reference-items-search {
+    width: 100%;
+  }
+}
+
+/* ==========================================
+   MOBILE KECIL
+   ========================================== */
+
+@media (max-width: 380px) {
+  .reference-primary-button {
+    padding: 8px;
+    font-size: 8px;
+  }
+
+  .reference-panel-heading {
+    gap: 6px;
+  }
+
+  .reference-panel-heading > button {
+    white-space: normal;
+  }
+}
+
+/* AKSI BARIS REFERENSI KALENDER */
+
+.reference-row-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.reference-publish-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-height: 30px;
+  padding: 6px 9px;
+  border: 1px solid #B8D5EF;
+  border-radius: 7px;
+  background: #EAF2FA;
+  color: #2878C8;
+  font-size: 9px;
+  font-weight: 750;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reference-publish-button:hover {
+  border-color: #2878C8;
+  background: #2878C8;
+  color: white;
+}
+
+.reference-delete-button {
+  display: grid;
+  place-items: center;
+  width: 31px;
+  height: 31px;
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 7px;
+  background: #FFF1F1;
+  color: #D64545;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reference-delete-button:hover {
+  background: #D64545;
+  color: white;
+}
+
+/* ==========================================
+   HASIL EKSTRAKSI KALENDER PENDIDIKAN
+   ========================================== */
+
+.extracted-calendar-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.extracted-count {
+  flex-shrink: 0;
+  padding: 7px 11px;
+  border: 1px solid #B8D5EF;
+  border-radius: 20px;
+  background: #EAF2FA;
+  color: #2878C8;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.extracted-edit-input {
+  width: 100%;
+  min-width: 105px;
+  min-height: 34px;
+  padding: 7px;
+  border: 1px solid #D9E2EC;
+  border-radius: 6px;
+  outline: none;
+  background: white;
+  color: #203247;
+  font-size: 10px;
+}
+
+.extracted-edit-input:focus {
+  border-color: #2878C8;
+  box-shadow: 0 0 0 2px rgba(40, 120, 200, 0.10);
+}
+
+.extracted-review-status {
+  display: inline-block;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background: #FFF3E3;
+  color: #A36B17;
+  font-size: 9px;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.extracted-save-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 14px;
+  border-top: 1px solid #E9EFF5;
+}
+
+.document-preview-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.document-preview-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.document-preview-summary > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #D9E2EC;
+  border-radius: 9px;
+  background: #F8FAFD;
+}
+
+.document-preview-summary span {
+  color: #68788C;
+  font-size: 9px;
+}
+
+.document-preview-summary strong {
+  overflow-wrap: anywhere;
+  color: #173B68;
+  font-size: 11px;
+}
+
+.document-preview-text {
+  max-height: 320px;
+  padding: 14px;
+  overflow: auto;
+  border: 1px solid #D9E2EC;
+  border-radius: 9px;
+  background: #F8FAFD;
+}
+
+.document-preview-text pre {
+  color: #203247;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.reference-read-actions {
+  margin-top: 10px;
+}
+
+.reference-read-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 39px;
+  padding: 9px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #2878C8;
+  color: white;
+  font-size: 10px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.reference-read-button:hover {
+  background: #173B68;
+}
+
+.reference-read-button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.reference-read-error {
+  margin-top: 9px;
+  padding: 10px 12px;
+  border: 1px solid #F0CACA;
+  border-radius: 8px;
+  background: #FFF4F4;
+  color: #B83232;
+  font-size: 10px;
+}
+
+@media (max-width: 600px) {
+  .document-preview-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .extracted-save-actions {
+    justify-content: stretch;
+  }
+
+  .extracted-save-actions button {
+    width: 100%;
+  }
+}
+
+.extracted-reject-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 7px 11px;
+  border: 1px solid #dc2626;
+  border-radius: 7px;
+  background: #fff;
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.extracted-reject-button:hover {
+  background: #fef2f2;
+}
+
+.extracted-rejected-status {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 6px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.extracted-restore-button {
+  padding: 7px 10px;
+  border: 1px solid #2878c8;
+  border-radius: 7px;
+  background: #eff6ff;
+  color: #1d5fa7;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.extracted-edit-input:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}

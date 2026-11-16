@@ -1,0 +1,373 @@
+
+.arsip-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #183451;
+  font-family: inherit;
+}
+
+.arsip-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.arsip-heading-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #eaf2fb;
+  color: #1d5b91;
+}
+
+.arsip-header h1 {
+  margin: 0 0 5px;
+  font-size: 23px;
+  color: #173b68;
+}
+
+.arsip-header p,
+.arsip-table-heading p {
+  margin: 0;
+  color: #718096;
+  font-size: 13px;
+}
+
+.arsip-refresh,
+.arsip-reset {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #d6e0eb;
+  border-radius: 8px;
+  padding: 10px 13px;
+  background: #fff;
+  color: #31516f;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.arsip-refresh {
+  margin-left: auto;
+}
+
+.arsip-refresh:hover,
+.arsip-reset:hover {
+  background: #f2f6fb;
+}
+
+.arsip-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.arsip-stats article,
+.arsip-filter-panel,
+.arsip-table-panel {
+  background: #fff;
+  border: 1px solid #e0e7ef;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(25, 55, 85, 0.035);
+}
+
+.arsip-stats article {
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.arsip-stats article span {
+  color: #63758a;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.arsip-stats article strong {
+  color: #173b68;
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+.arsip-stats article small {
+  color: #8a98a9;
+  font-size: 11px;
+}
+
+.arsip-filter-panel,
+.arsip-table-panel {
+  padding: 19px;
+}
+
+.arsip-section-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 16px;
+  color: #315d85;
+}
+
+.arsip-section-title h2,
+.arsip-table-heading h2 {
+  margin: 0;
+  font-size: 16px;
+  color: #203f60;
+}
+
+.arsip-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.arsip-filter-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #53677e;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.arsip-filter-grid select,
+.arsip-search input {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #d8e1eb;
+  border-radius: 8px;
+  padding: 10px 11px;
+  background: #fff;
+  color: #304a65;
+  font: inherit;
+  font-size: 13px;
+  outline: none;
+}
+
+.arsip-filter-grid select:focus,
+.arsip-search:focus-within {
+  border-color: #5590c5;
+  box-shadow: 0 0 0 3px rgba(65, 132, 190, 0.1);
+}
+
+.arsip-search-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.arsip-search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid #d8e1eb;
+  border-radius: 8px;
+  padding-left: 11px;
+  color: #8292a5;
+}
+
+.arsip-search input {
+  border: 0;
+  box-shadow: none !important;
+}
+
+.arsip-table-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.arsip-table-heading p {
+  margin-top: 5px;
+}
+
+.arsip-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.arsip-table-scroll table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 950px;
+  font-size: 12px;
+}
+
+.arsip-table-scroll th {
+  padding: 12px 11px;
+  background: #f4f7fb;
+  color: #526981;
+  text-align: left;
+  font-weight: 700;
+  white-space: nowrap;
+  border-bottom: 1px solid #e0e7ef;
+}
+
+.arsip-table-scroll td {
+  padding: 13px 11px;
+  color: #53677e;
+  border-bottom: 1px solid #edf1f5;
+  vertical-align: middle;
+}
+
+.arsip-table-scroll tbody tr:hover {
+  background: #fafcff;
+}
+
+.arsip-table-scroll td strong,
+.arsip-table-scroll td small {
+  display: block;
+}
+
+.arsip-table-scroll td strong {
+  color: #304b68;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.arsip-table-scroll td small {
+  margin-top: 4px;
+  color: #8795a6;
+  font-size: 11px;
+}
+
+.arsip-status {
+  display: inline-flex;
+  padding: 5px 8px;
+  border-radius: 20px;
+  background: #eef2f6;
+  color: #586b7f;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.arsip-status-diterima {
+  background: #e7f6ed;
+  color: #168044;
+}
+
+.arsip-status-perlu-revisi {
+  background: #fff0ed;
+  color: #c34232;
+}
+
+.arsip-status-sedang-diperiksa {
+  background: #eaf2ff;
+  color: #2865ad;
+}
+
+.arsip-status-sudah-dikumpulkan {
+  background: #e7f6f8;
+  color: #087d8b;
+}
+
+.arsip-file-link,
+.arsip-file-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #27699e;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+  max-width: 180px;
+  overflow-wrap: anywhere;
+}
+
+.arsip-file-link:hover {
+  text-decoration: underline;
+}
+
+.arsip-file-name {
+  flex-wrap: wrap;
+  color: #53677e;
+}
+
+.arsip-file-name small {
+  flex-basis: 100%;
+  color: #9a6b32 !important;
+  font-weight: 400;
+}
+
+.arsip-no-file {
+  color: #9aa6b3;
+  font-size: 11px;
+}
+
+.arsip-empty {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  color: #91a0b1;
+  text-align: center;
+}
+
+.arsip-empty strong {
+  color: #526981;
+  font-size: 14px;
+}
+
+.arsip-empty span {
+  font-size: 12px;
+}
+
+@media (max-width: 1050px) {
+  .arsip-filter-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .arsip-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .arsip-header {
+    align-items: flex-start;
+  }
+
+  .arsip-header h1 {
+    font-size: 20px;
+  }
+
+  .arsip-refresh {
+    margin-left: 0;
+  }
+
+  .arsip-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .arsip-stats article {
+    padding: 13px;
+  }
+
+  .arsip-filter-panel,
+  .arsip-table-panel {
+    padding: 13px;
+  }
+
+  .arsip-filter-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .arsip-search-row {
+    flex-direction: column;
+  }
+
+  .arsip-reset {
+    width: 100%;
+  }
+}

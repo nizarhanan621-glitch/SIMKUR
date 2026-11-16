@@ -1,0 +1,649 @@
+
+/* =========================================================
+   ADMINISTRASI PEMBELAJARAN - HALAMAN GURU
+   Stylesheet khusus, tidak mengubah Administrasi Guru.
+   ========================================================= */
+
+.ap-page {
+  --ap-primary: #2563eb;
+  --ap-primary-dark: #1d4ed8;
+  --ap-text: #172554;
+  --ap-muted: #64748b;
+  --ap-border: #e2e8f0;
+  --ap-surface: #ffffff;
+  --ap-background: #f5f8fd;
+
+  width: 100%;
+  min-height: 100%;
+  padding: 26px;
+  color: var(--ap-text);
+  background: var(--ap-background);
+  box-sizing: border-box;
+}
+
+.ap-page *,
+.ap-page *::before,
+.ap-page *::after {
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.ap-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 24px;
+  padding: 25px 28px;
+  color: #ffffff;
+  background: linear-gradient(120deg, #1e40af, #2563eb 65%, #3b82f6);
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.16);
+}
+
+.ap-header-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.17);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+}
+
+.ap-header h1 {
+  margin: 0 0 7px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 750;
+  line-height: 1.3;
+}
+
+.ap-header p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* PANEL */
+
+.ap-panel {
+  margin-bottom: 20px;
+  padding: 23px;
+  background: var(--ap-surface);
+  border: 1px solid var(--ap-border);
+  border-radius: 16px;
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.035);
+}
+
+.ap-panel-title {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 21px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #edf1f7;
+}
+
+.ap-panel-title > svg {
+  flex-shrink: 0;
+  color: var(--ap-primary);
+}
+
+.ap-panel-title h2 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* FORM DAN FILTER */
+
+.ap-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ap-page label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.ap-full-label {
+  width: 100%;
+  margin-top: 2px;
+}
+
+.ap-page input,
+.ap-page select,
+.ap-page textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 11px 13px;
+  color: #1e293b;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  outline: none;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ap-page input,
+.ap-page select {
+  min-height: 43px;
+}
+
+.ap-page textarea {
+  min-height: 76px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.ap-page input:focus,
+.ap-page select:focus,
+.ap-page textarea:focus {
+  border-color: var(--ap-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.11);
+}
+
+.ap-page input::placeholder,
+.ap-page textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* IDENTITAS GURU */
+
+.ap-identity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 22px;
+  margin-top: 17px;
+  padding: 15px 17px;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 11px;
+}
+
+.ap-identity strong {
+  color: #1d4ed8;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.ap-identity span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* KARTU RINGKASAN */
+
+.ap-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 21px;
+}
+
+.ap-summary-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 112px;
+  padding: 19px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid var(--ap-border);
+  border-radius: 14px;
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.035);
+}
+
+.ap-summary-card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: #3b82f6;
+  content: "";
+}
+
+.ap-summary-card:nth-child(2)::before {
+  background: #0d9488;
+}
+
+.ap-summary-card:nth-child(3)::before {
+  background: #16a34a;
+}
+
+.ap-summary-card:nth-child(4)::before {
+  background: #8b5cf6;
+}
+
+.ap-summary-card span {
+  margin-bottom: 10px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ap-summary-card strong {
+  color: #1e293b;
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.ap-summary-card .ap-summary-status {
+  color: #2563eb;
+  font-size: 15px;
+}
+
+/* INFORMASI PENUGASAN */
+
+.ap-assignment-info {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+  margin-top: 17px;
+  padding: 17px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 11px;
+}
+
+.ap-assignment-info > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.ap-assignment-info span {
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.ap-assignment-info strong {
+  color: #1e293b;
+  font-size: 13px;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+
+/* PESAN KOSONG */
+
+.ap-empty {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 17px;
+  color: #92400e;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 11px;
+}
+
+.ap-empty svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: #d97706;
+}
+
+.ap-empty p {
+  margin: 0;
+  color: #92400e;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* KATEGORI DOKUMEN */
+
+.ap-category {
+  margin-top: 23px;
+}
+
+.ap-category:first-of-type {
+  margin-top: 0;
+}
+
+.ap-category h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 13px;
+  padding: 12px 15px;
+  color: #1e40af;
+  background: #eff6ff;
+  border-left: 4px solid #3b82f6;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+/* KARTU DOKUMEN */
+
+.ap-document {
+  margin-bottom: 13px;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ap-document:hover {
+  border-color: #bfdbfe;
+  box-shadow: 0 4px 13px rgba(37, 99, 235, 0.055);
+}
+
+.ap-document-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.ap-document-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  color: #2563eb;
+  background: #eff6ff;
+  border-radius: 11px;
+}
+
+.ap-document-name {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.ap-document-name strong {
+  color: #1e293b;
+  font-size: 13px;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
+.ap-document-name small {
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.ap-status {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  max-width: 180px;
+  padding: 7px 11px;
+  border-radius: 30px;
+  font-size: 10px;
+  font-weight: 750;
+  text-align: center;
+}
+
+/* INFORMASI BERKAS */
+
+.ap-document-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 14px 0;
+  padding: 11px 13px;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.ap-document-meta span {
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.ap-review-note {
+  margin: 12px 0;
+  padding: 12px 14px;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-left: 3px solid #f97316;
+  border-radius: 8px;
+}
+
+.ap-review-note strong {
+  color: #9a3412;
+  font-size: 12px;
+}
+
+.ap-review-note p {
+  margin: 6px 0 0;
+  color: #7c2d12;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+/* CATATAN GURU */
+
+.ap-note-label {
+  margin-top: 14px;
+}
+
+.ap-note-label textarea {
+  background: #fbfdff;
+}
+
+/* TOMBOL */
+
+.ap-document-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.ap-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 39px;
+  padding: 9px 15px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.ap-button:hover {
+  transform: translateY(-1px);
+}
+
+.ap-button-primary {
+  color: #ffffff;
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.ap-button-primary:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.ap-button-secondary {
+  color: #334155;
+  background: #ffffff;
+  border-color: #cbd5e1;
+}
+
+.ap-button-secondary:hover {
+  color: #1d4ed8;
+  background: #eff6ff;
+  border-color: #93c5fd;
+}
+
+.ap-button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.25);
+  outline-offset: 2px;
+}
+
+/* NOTIFIKASI DAN FOOTER */
+
+.ap-upload-notice {
+  margin-top: 18px;
+  padding: 14px 16px;
+  color: #854d0e;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.ap-message {
+  margin-top: 15px;
+  padding: 12px 15px;
+  color: #166534;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 9px;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.ap-footer {
+  margin-top: 20px;
+  padding: 15px 5px;
+  color: #94a3b8;
+  border-top: 1px solid #e2e8f0;
+  font-size: 11px;
+  text-align: center;
+}
+
+/* RESPONSIVE TABLET */
+
+@media (max-width: 1000px) {
+  .ap-page {
+    padding: 20px;
+  }
+
+  .ap-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* RESPONSIVE HP */
+
+@media (max-width: 640px) {
+  .ap-page {
+    padding: 13px;
+  }
+
+  .ap-header {
+    gap: 13px;
+    padding: 19px;
+    border-radius: 13px;
+  }
+
+  .ap-header-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .ap-header h1 {
+    font-size: 18px;
+  }
+
+  .ap-header p {
+    font-size: 11px;
+  }
+
+  .ap-panel {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .ap-panel-title h2 {
+    font-size: 14px;
+  }
+
+  .ap-filter-grid,
+  .ap-assignment-info {
+    grid-template-columns: 1fr;
+  }
+
+  .ap-summary-grid {
+    gap: 10px;
+  }
+
+  .ap-summary-card {
+    min-height: 94px;
+    padding: 14px;
+  }
+
+  .ap-summary-card span {
+    font-size: 10px;
+  }
+
+  .ap-summary-card strong {
+    font-size: 23px;
+  }
+
+  .ap-summary-card .ap-summary-status {
+    font-size: 12px;
+  }
+
+  .ap-document {
+    padding: 14px;
+  }
+
+  .ap-document-heading {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .ap-document-name {
+    flex-basis: calc(100% - 60px);
+  }
+
+  .ap-status {
+    margin-left: 53px;
+  }
+
+  .ap-document-actions {
+    flex-direction: column;
+  }
+
+  .ap-button {
+    width: 100%;
+  }
+
+  .ap-document-meta {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

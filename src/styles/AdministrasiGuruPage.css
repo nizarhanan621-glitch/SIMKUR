@@ -1,0 +1,1909 @@
+
+.ag-page {
+  padding: 24px;
+  color: #24364b;
+  min-height: 100%;
+}
+
+.ag-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.ag-header h1 {
+  margin: 0 0 7px;
+  color: #173b68;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.ag-header p {
+  margin: 0;
+  color: #718096;
+  font-size: 14px;
+}
+
+.ag-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.ag-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e5ebf2;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(23, 59, 104, 0.04);
+}
+
+.ag-stat-icon {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  flex-shrink: 0;
+}
+
+.ag-stat-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.ag-stat-icon.blue {
+  color: #2878c8;
+  background: #eaf2fa;
+}
+
+.ag-stat-icon.green {
+  color: #168653;
+  background: #e8f7ef;
+}
+
+.ag-stat-icon.orange {
+  color: #d98220;
+  background: #fff3e3;
+}
+
+.ag-stat-icon.purple {
+  color: #8055bd;
+  background: #f2ebfc;
+}
+
+.ag-stat-card span {
+  display: block;
+  margin-bottom: 5px;
+  color: #718096;
+  font-size: 12px;
+}
+
+.ag-stat-card strong {
+  color: #173b68;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.ag-section {
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #e5ebf2;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(23, 59, 104, 0.04);
+}
+
+.ag-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.ag-section-header h2 {
+  margin: 0 0 6px;
+  color: #173b68;
+  font-size: 18px;
+}
+
+.ag-section-header p {
+  margin: 0;
+  color: #718096;
+  font-size: 13px;
+}
+
+.ag-search {
+  width: 260px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 12px;
+  background: #f8fafc;
+  border: 1px solid #dce5ef;
+  border-radius: 8px;
+  color: #718096;
+}
+
+.ag-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #24364b;
+  font-size: 13px;
+}
+
+.ag-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.ag-table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+.ag-table th {
+  padding: 13px 12px;
+  background: #f3f7fb;
+  color: #52677e;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+  border-bottom: 1px solid #e1e9f1;
+}
+
+.ag-table td {
+  padding: 14px 12px;
+  color: #52677e;
+  font-size: 13px;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.ag-teacher-name {
+  color: #173b68 !important;
+  font-weight: 600;
+}
+
+.ag-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.ag-status.pending {
+  color: #a66b12;
+  background: #fff4df;
+}
+
+.ag-detail-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 7px 11px;
+  border: 1px solid #cbdced;
+  border-radius: 7px;
+  background: #fff;
+  color: #2878c8;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ag-detail-btn:hover {
+  background: #eaf2fa;
+}
+
+.ag-empty {
+  padding: 35px !important;
+  color: #8795a5 !important;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .ag-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .ag-page {
+    padding: 15px;
+  }
+
+  .ag-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .ag-section {
+    padding: 15px;
+  }
+
+  .ag-section-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .ag-search {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
+/* MASTER JENIS ADMINISTRASI */
+
+.ag-master-section {
+  margin-bottom: 24px;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #e5ebf2;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(23, 59, 104, 0.04);
+}
+
+.ag-master-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.ag-master-header h2 {
+  margin: 0 0 6px;
+  color: #173b68;
+  font-size: 18px;
+}
+
+.ag-master-header p {
+  margin: 0;
+  color: #718096;
+  font-size: 13px;
+}
+
+.ag-master-header > span {
+  padding: 7px 12px;
+  color: #2878c8;
+  background: #eaf2fa;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.ag-master-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.ag-master-card {
+  padding: 18px;
+  background: #f9fbfd;
+  border: 1px solid #e3ebf3;
+  border-radius: 10px;
+}
+
+.ag-master-card h3 {
+  margin: 0 0 7px;
+  color: #173b68;
+  font-size: 15px;
+}
+
+.ag-master-card > p {
+  margin: 0 0 15px;
+  color: #718096;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.ag-document-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ag-document-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 12px;
+  background: #fff;
+  border: 1px solid #e8eef4;
+  border-radius: 8px;
+}
+
+.ag-document-item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ag-document-item strong {
+  color: #344b63;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ag-document-item small {
+  color: #8795a5;
+  font-size: 11px;
+}
+
+.ag-document-item > span {
+  padding: 5px 8px;
+  color: #2878c8;
+  background: #eaf2fa;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+  .ag-master-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .ag-master-section {
+    padding: 15px;
+  }
+
+  .ag-master-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ag-document-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+
+/* =====================================
+   PENGATURAN KEWAJIBAN ADMINISTRASI
+===================================== */
+
+.ag-settings-section {
+  margin-bottom: 24px;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #e5ebf2;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(20, 50, 80, 0.04);
+}
+
+.ag-settings-section .ag-section-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.ag-period-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-top: 22px;
+  padding: 18px;
+  background: #f5f8fc;
+  border: 1px solid #e5ebf2;
+  border-radius: 10px;
+}
+
+.ag-period-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ag-period-field label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #344b63;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ag-period-field input,
+.ag-period-field select {
+  width: 100%;
+  min-height: 40px;
+  padding: 9px 12px;
+  color: #263b50;
+  background: #fff;
+  border: 1px solid #d8e1eb;
+  border-radius: 7px;
+  outline: none;
+}
+
+.ag-period-field input:focus,
+.ag-period-field select:focus {
+  border-color: #2878c8;
+  box-shadow: 0 0 0 3px rgba(40, 120, 200, 0.1);
+}
+
+.ag-period-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 14px;
+  background: #eaf2fa;
+  border-radius: 8px;
+}
+
+.ag-period-info span {
+  color: #52677d;
+  font-size: 12px;
+}
+
+.ag-period-info strong {
+  color: #173b68;
+  font-size: 23px;
+}
+
+.ag-settings-instruction {
+  margin: 20px 0 14px;
+  padding: 12px 15px;
+  color: #52677d;
+  background: #f8fafc;
+  border-left: 3px solid #2878c8;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.ag-settings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.ag-settings-category {
+  padding: 16px;
+  border: 1px solid #e5ebf2;
+  border-radius: 10px;
+}
+
+.ag-settings-category-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.ag-settings-category-header h3 {
+  margin: 0;
+  color: #173b68;
+  font-size: 14px;
+}
+
+.ag-settings-category-header span {
+  padding: 4px 8px;
+  color: #2878c8;
+  background: #eaf2fa;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.ag-obligation-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  margin-top: 8px;
+  padding: 11px;
+  background: #f8fafc;
+  border: 1px solid #edf1f5;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.ag-obligation-item:hover {
+  border-color: #b9d4ee;
+  background: #f2f7fc;
+}
+
+.ag-obligation-item.selected {
+  background: #edf5fd;
+  border-color: #b8d5f1;
+}
+
+.ag-obligation-item input {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  accent-color: #2878c8;
+  cursor: pointer;
+}
+
+.ag-obligation-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ag-obligation-content strong {
+  color: #344b63;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ag-obligation-content small {
+  color: #7b8b9c;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.ag-settings-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 17px;
+  border-top: 1px solid #edf1f5;
+}
+
+.ag-save-success {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #218653;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ag-save-settings-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 9px 17px;
+  color: #fff;
+  background: #2878c8;
+  border: none;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.ag-save-settings-btn:hover:not(:disabled) {
+  background: #1d65aa;
+}
+
+.ag-save-settings-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ag-period-archive {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8fafc;
+  border: 1px solid #e5ebf2;
+  border-radius: 9px;
+}
+
+.ag-period-archive > strong {
+  color: #173b68;
+  font-size: 13px;
+}
+
+.ag-period-archive > span {
+  color: #718196;
+  font-size: 12px;
+}
+
+.ag-archive-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ag-archive-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid #e5ebf2;
+  border-radius: 7px;
+}
+
+.ag-archive-item span {
+  color: #344b63;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ag-archive-item small {
+  color: #718196;
+  font-size: 11px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .ag-period-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ag-period-info {
+    grid-column: span 2;
+  }
+
+  .ag-settings-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .ag-settings-section {
+    padding: 15px;
+  }
+
+  .ag-period-form {
+    grid-template-columns: 1fr;
+    padding: 13px;
+  }
+
+  .ag-period-info {
+    grid-column: auto;
+  }
+
+  .ag-settings-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .ag-save-settings-btn {
+    width: 100%;
+  }
+
+  .ag-archive-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+
+/* =====================================
+   PENGECUALIAN ADMINISTRASI GURU
+===================================== */
+
+.ag-exception-section {
+  margin-bottom: 24px;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #e5ebf2;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(20, 50, 80, 0.04);
+}
+
+.ag-exception-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 16px;
+  align-items: end;
+  margin-top: 20px;
+  padding: 17px;
+  background: #f5f8fc;
+  border: 1px solid #e5ebf2;
+  border-radius: 9px;
+}
+
+.ag-exception-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ag-exception-field label {
+  color: #344b63;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ag-exception-field select,
+.ag-exception-field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  color: #263b50;
+  background: #fff;
+  border: 1px solid #d8e1eb;
+  border-radius: 7px;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.ag-exception-field select {
+  min-height: 41px;
+}
+
+.ag-exception-field select:focus,
+.ag-exception-field textarea:focus {
+  border-color: #2878c8;
+  box-shadow: 0 0 0 3px rgba(40, 120, 200, 0.1);
+}
+
+.ag-exception-teacher {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 65px;
+  justify-content: center;
+  padding: 12px 15px;
+  background: #eaf2fa;
+  border-radius: 8px;
+}
+
+.ag-exception-teacher strong {
+  color: #173b68;
+  font-size: 14px;
+}
+
+.ag-exception-teacher span {
+  color: #65798d;
+  font-size: 12px;
+}
+
+.ag-exception-document-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 22px 0 12px;
+}
+
+.ag-exception-document-header strong {
+  color: #173b68;
+  font-size: 14px;
+}
+
+.ag-exception-document-header span {
+  padding: 5px 10px;
+  color: #2878c8;
+  background: #eaf2fa;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.ag-exception-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.ag-exception-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 13px;
+  background: #f8fafc;
+  border: 1px solid #e5ebf2;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.ag-exception-item:hover {
+  border-color: #b9d4ee;
+  background: #f2f7fc;
+}
+
+.ag-exception-item.selected {
+  background: #fff5ed;
+  border-color: #f2c9a8;
+}
+
+.ag-exception-item input {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  accent-color: #d97732;
+  cursor: pointer;
+}
+
+.ag-exception-item > span {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ag-exception-item strong {
+  color: #344b63;
+  font-size: 13px;
+}
+
+.ag-exception-item small {
+  color: #7b8b9c;
+  font-size: 11px;
+}
+
+.ag-exception-note {
+  margin-top: 18px;
+}
+
+.ag-exception-note textarea {
+  min-height: 85px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.ag-exception-section .ag-settings-footer {
+  margin-top: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .ag-exception-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .ag-exception-section {
+    padding: 15px;
+  }
+
+  .ag-exception-form {
+    grid-template-columns: 1fr;
+    padding: 13px;
+  }
+
+  .ag-exception-document-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ag-exception-section .ag-settings-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .ag-exception-section .ag-save-settings-btn {
+    width: 100%;
+  }
+}
+
+
+/* =====================================
+   RINCIAN ADMINISTRASI GURU
+===================================== */
+
+.ag-teacher-detail {
+  margin-top: 24px;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #dce7f2;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(20, 50, 80, 0.04);
+}
+
+.ag-teacher-detail-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e8eef5;
+}
+
+.ag-teacher-detail-header h3 {
+  margin: 0 0 7px;
+  color: #173b68;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.ag-teacher-detail-header p {
+  margin: 0;
+  color: #718197;
+  font-size: 12px;
+}
+
+.ag-close-detail-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  color: #65798d;
+  background: #f2f5f9;
+  border: 1px solid #e1e8f0;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.ag-close-detail-btn:hover {
+  color: #c0392b;
+  background: #fff0ee;
+  border-color: #f1c5c0;
+}
+
+.ag-document-monitor {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 20px;
+}
+
+.ag-monitor-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 17px;
+  background: #f8fafc;
+  border: 1px solid #e5ebf2;
+  border-radius: 9px;
+}
+
+.ag-monitor-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  color: #2878c8;
+  background: #eaf2fa;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.ag-monitor-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.ag-monitor-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.ag-monitor-title > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ag-monitor-title strong {
+  color: #344b63;
+  font-size: 13px;
+}
+
+.ag-monitor-title small {
+  color: #8190a1;
+  font-size: 11px;
+}
+
+.ag-monitor-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 14px;
+}
+
+.ag-monitor-fields .ag-exception-field select,
+.ag-monitor-fields .ag-exception-field textarea {
+  box-sizing: border-box;
+}
+
+.ag-monitor-fields .ag-exception-field textarea {
+  min-height: 65px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.ag-monitor-updated {
+  display: block;
+  margin-top: 11px;
+  color: #8795a5;
+  font-size: 11px;
+}
+
+.ag-teacher-detail .ag-settings-footer {
+  margin-top: 20px;
+  padding-top: 17px;
+  border-top: 1px solid #e8eef5;
+}
+
+/* STATUS DOKUMEN */
+
+.ag-status.accepted {
+  color: #16804a;
+  background: #e7f7ee;
+}
+
+.ag-status.submitted {
+  color: #2167aa;
+  background: #e8f2fc;
+}
+
+.ag-status.review {
+  color: #8054b5;
+  background: #f2eafb;
+}
+
+.ag-status.revision {
+  color: #bd6425;
+  background: #fff1e5;
+}
+
+.ag-status.pending {
+  color: #718096;
+  background: #edf1f5;
+}
+
+/* TAMPILAN RESPONSIF */
+
+@media (max-width: 800px) {
+  .ag-monitor-fields {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .ag-teacher-detail {
+    padding: 15px;
+  }
+
+  .ag-monitor-item {
+    gap: 9px;
+    padding: 12px;
+  }
+
+  .ag-monitor-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ag-teacher-detail .ag-settings-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .ag-teacher-detail .ag-save-settings-btn {
+    width: 100%;
+  }
+}
+
+
+/* =====================================================
+   ACCORDION ADMINISTRASI GURU
+   SIMKUR v3.0
+===================================================== */
+
+.ag-accordion {
+  --accordion-color: #2878c8;
+  --accordion-soft: #eaf2fa;
+  --accordion-border: #c9def3;
+
+  width: 100%;
+  margin-bottom: 18px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid var(--accordion-border);
+  border-left: 5px solid var(--accordion-color);
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(25, 55, 90, 0.055);
+}
+
+/* VARIASI WARNA */
+
+.ag-accordion--blue {
+  --accordion-color: #2878c8;
+  --accordion-soft: #eaf2fa;
+  --accordion-border: #c9def3;
+}
+
+.ag-accordion--purple {
+  --accordion-color: #8054b5;
+  --accordion-soft: #f3edfa;
+  --accordion-border: #dfd0ef;
+}
+
+.ag-accordion--orange {
+  --accordion-color: #e58a32;
+  --accordion-soft: #fff4e8;
+  --accordion-border: #f1d9bd;
+}
+
+.ag-accordion--teal {
+  --accordion-color: #159b91;
+  --accordion-soft: #e8f7f5;
+  --accordion-border: #c4e8e4;
+}
+
+.ag-accordion--navy {
+  --accordion-color: #173b68;
+  --accordion-soft: #eaf0f7;
+  --accordion-border: #cbd8e7;
+}
+
+/* TOMBOL HEADER ACCORDION */
+
+.ag-accordion-trigger {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  min-height: 76px;
+  padding: 15px 19px;
+  border: none;
+  background: var(--accordion-soft);
+  color: #26384d;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.ag-accordion-trigger:hover {
+  background: color-mix(
+    in srgb,
+    var(--accordion-soft) 75%,
+    var(--accordion-color)
+  );
+}
+
+/* IKON ACCORDION */
+
+.ag-accordion-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  color: #ffffff;
+  background: var(--accordion-color);
+  border-radius: 11px;
+}
+
+.ag-accordion-icon svg {
+  stroke-width: 2.2;
+}
+
+/* JUDUL DAN DESKRIPSI */
+
+.ag-accordion-heading {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  gap: 5px;
+}
+
+.ag-accordion-heading strong {
+  color: var(--accordion-color);
+  font-size: 15px;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.ag-accordion-heading small {
+  color: #66768a;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* BADGE JUMLAH */
+
+.ag-accordion-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 6px 11px;
+  color: var(--accordion-color);
+  background: #ffffff;
+  border: 1px solid var(--accordion-border);
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* IKON PANAH */
+
+.ag-accordion-chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  color: var(--accordion-color);
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  transition: transform 0.25s ease;
+}
+
+.ag-accordion-chevron.expanded {
+  transform: rotate(180deg);
+}
+
+/* ISI ACCORDION */
+
+.ag-accordion-content {
+  padding: 20px;
+  background: #ffffff;
+  border-top: 1px solid var(--accordion-border);
+  animation: agAccordionOpen 0.22s ease;
+}
+
+@keyframes agAccordionOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MENYESUAIKAN KOMPONEN LAMA DI DALAM ACCORDION */
+
+.ag-accordion-content > .ag-section,
+.ag-accordion-content > .ag-master-section {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.ag-accordion-content .ag-section-header {
+  padding-top: 0;
+}
+
+/* RINGKASAN STATISTIK */
+
+.ag-accordion-content .ag-stats {
+  margin: 0;
+}
+
+/* RINCIAN ADMINISTRASI GURU */
+
+.ag-detail-accordion {
+  margin-top: 22px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #b9e4df;
+  border-left: 5px solid #159b91;
+  border-radius: 11px;
+  background: #ffffff;
+}
+
+.ag-detail-accordion .ag-teacher-detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 15px 18px;
+  background: #e8f7f5;
+}
+
+.ag-detail-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.ag-detail-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  background: #159b91;
+  border-radius: 10px;
+}
+
+.ag-detail-heading h3 {
+  margin: 0 0 5px;
+  color: #117c74;
+  font-size: 15px;
+  font-weight: 750;
+}
+
+.ag-detail-heading p {
+  margin: 0;
+  color: #607b79;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.ag-detail-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+}
+
+.ag-detail-toggle,
+.ag-detail-accordion .ag-close-detail-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border: 1px solid #c4e8e4;
+  border-radius: 8px;
+  color: #159b91;
+  background: #ffffff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.ag-detail-toggle:hover,
+.ag-detail-accordion .ag-close-detail-btn:hover {
+  color: #ffffff;
+  background: #159b91;
+}
+
+.ag-detail-toggle svg {
+  transition: transform 0.25s ease;
+}
+
+.ag-detail-toggle svg.expanded {
+  transform: rotate(180deg);
+}
+
+.ag-detail-accordion-content {
+  padding: 18px;
+  border-top: 1px solid #d5eeeb;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .ag-accordion {
+    margin-bottom: 14px;
+    border-radius: 10px;
+  }
+
+  .ag-accordion-trigger {
+    min-height: 68px;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .ag-accordion-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .ag-accordion-heading strong {
+    font-size: 13px;
+  }
+
+  .ag-accordion-heading small {
+    font-size: 11px;
+  }
+
+  .ag-accordion-badge {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+
+  .ag-accordion-content {
+    padding: 14px;
+  }
+
+  .ag-detail-accordion .ag-teacher-detail-header {
+    padding: 12px;
+  }
+
+  .ag-detail-accordion-content {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ag-accordion-trigger {
+    flex-wrap: wrap;
+  }
+
+  .ag-accordion-badge {
+    margin-left: 48px;
+  }
+
+  .ag-accordion-chevron {
+    margin-left: auto;
+  }
+
+  .ag-detail-heading p {
+    font-size: 11px;
+  }
+}
+
+
+/* ==========================================
+   MODAL RINCIAN ADMINISTRASI GURU
+========================================== */
+
+.ag-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  background: rgba(15, 31, 49, 0.58);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-sizing: border-box;
+  animation: agModalFadeIn 0.2s ease;
+}
+
+.ag-modal {
+  width: 100%;
+  max-width: 900px;
+  max-height: calc(100vh - 44px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #dce7f2;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 24px 70px rgba(12, 30, 50, 0.25);
+  animation: agModalSlideIn 0.25s ease;
+}
+
+.ag-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-shrink: 0;
+  padding: 19px 24px;
+  border-bottom: 1px solid #e2eceb;
+  background: #e8f7f5;
+}
+
+.ag-modal-header .ag-detail-heading {
+  flex: 1;
+}
+
+.ag-modal-header .ag-close-detail-btn {
+  flex-shrink: 0;
+}
+
+.ag-modal-body {
+  flex: 1;
+  min-height: 0;
+  padding: 22px 24px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.ag-modal-body .ag-document-monitor {
+  margin-top: 0;
+}
+
+.ag-modal-body .ag-settings-footer {
+  margin-top: 20px;
+}
+
+/* ANIMASI MODAL */
+
+@keyframes agModalFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes agModalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* RESPONSIVE MODAL */
+
+@media (max-width: 700px) {
+  .ag-modal-backdrop {
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  .ag-modal {
+    max-height: calc(100vh - 24px);
+    margin: auto 0;
+    border-radius: 12px;
+  }
+
+  .ag-modal-header {
+    padding: 15px 16px;
+  }
+
+  .ag-modal-body {
+    padding: 16px;
+  }
+
+  .ag-modal-header .ag-detail-heading {
+    gap: 9px;
+  }
+
+  .ag-modal-header .ag-detail-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .ag-modal-header .ag-detail-heading h3 {
+    font-size: 14px;
+  }
+
+  .ag-modal-header .ag-detail-heading p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ag-modal-body .ag-monitor-item {
+    flex-direction: column;
+  }
+
+  .ag-modal-body .ag-monitor-content {
+    width: 100%;
+  }
+
+  .ag-modal-body .ag-settings-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .ag-modal-body .ag-save-settings-btn {
+    width: 100%;
+  }
+}
+
+
+/* =========================================
+   PERBAIKAN TATA LETAK PENUGASAN MENGAJAR
+   ========================================= */
+
+.ag-assignment-section {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin: 18px 0;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1px solid #d8e5ef;
+  border-radius: 12px;
+  background: #f8fbfe;
+}
+
+.ag-assignment-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.ag-assignment-list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+}
+
+.ag-assignment-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  overflow: visible;
+  border: 1px solid #d5e2ef;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.ag-assignment-card-title,
+.ag-assignment-card-subtitle,
+.ag-assignment-card-progress {
+  display: block;
+  position: static;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  line-height: 1.5;
+}
+
+.ag-assignment-card-title {
+  color: #234b70;
+  font-weight: 700;
+}
+
+.ag-assignment-card-subtitle {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.ag-assignment-card-progress {
+  color: #2878c8;
+  font-size: 12px;
+}
+
+.ag-assignment-detail-title {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 14px;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+  .ag-assignment-section {
+    padding: 12px;
+  }
+
+  .ag-assignment-card {
+    padding: 12px;
+  }
+}
+
+
+/* KARTU DOKUMEN ADMINISTRASI */
+.ag-document-card {
+  width: 100%;
+  margin-top: 14px;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #dce5ef;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(31, 65, 100, 0.05);
+}
+
+.ag-document-main {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.ag-document-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563a6;
+  background: #eaf3ff;
+  border-radius: 10px;
+}
+
+.ag-document-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.ag-document-label {
+  color: #64748b;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.ag-document-name {
+  color: #1e3550;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.ag-document-info small {
+  color: #8290a1;
+  font-size: 11px;
+}
+
+.ag-document-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 17px;
+}
+
+.ag-document-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 39px;
+  padding: 0 15px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.ag-document-view {
+  color: #ffffff;
+  background: #2563a6;
+}
+
+.ag-document-view:hover {
+  background: #194d85;
+}
+
+.ag-document-download {
+  color: #315b80;
+  background: #f0f5fa;
+  border-color: #d8e3ee !important;
+}
+
+.ag-document-download:hover {
+  background: #e2edf7;
+}
+
+.ag-document-actions button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.ag-document-history {
+  margin-top: 16px;
+  padding-top: 13px;
+  border-top: 1px solid #e8edf3;
+}
+
+.ag-document-history summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: #315b80;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ag-document-history summary span {
+  color: #8492a3;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.ag-document-history-list {
+  margin-top: 12px;
+}
+
+.ag-document-history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.ag-document-history-info {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  color: #52718f;
+}
+
+.ag-document-history-info span {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.ag-document-history-info strong {
+  color: #344d67;
+  font-size: 11px;
+}
+
+.ag-document-history-info small {
+  color: #8290a1;
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+
+.ag-document-history-actions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.ag-document-history-actions button {
+  padding: 6px 10px;
+  color: #315b80;
+  background: #f0f5fa;
+  border: 1px solid #dce5ef;
+  border-radius: 6px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .ag-document-card {
+    padding: 13px;
+  }
+
+  .ag-document-actions {
+    flex-direction: column;
+  }
+
+  .ag-document-actions button {
+    width: 100%;
+  }
+
+  .ag-document-history-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,191 @@
+
+.kurikulum-sekolah-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 24px;
+  color: var(--text-primary, #1e293b);
+}
+
+.ks-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ks-header-icon {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: #e8f0ff;
+  color: #2563eb;
+}
+
+.ks-header h1 {
+  margin: 0 0 6px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.ks-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.ks-info,
+.ks-footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px 17px;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  background: #eff6ff;
+  color: #1e40af;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.ks-info p {
+  margin: 0;
+}
+
+.ks-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.ks-summary-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.ks-card-icon,
+.ks-grade-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: #f1f5f9;
+  color: #2563eb;
+}
+
+.ks-summary-card span,
+.ks-grade-info span {
+  display: block;
+  margin-bottom: 6px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.ks-summary-card strong {
+  display: block;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.ks-section {
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.ks-section-header {
+  margin-bottom: 20px;
+}
+
+.ks-section-header h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.ks-section-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.ks-grade-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.ks-grade-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 17px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  min-width: 0;
+}
+
+.ks-grade-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.ks-grade-info strong {
+  display: block;
+  font-size: 20px;
+}
+
+.ks-grade-info p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.ks-grade-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #15803d;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.ks-footer {
+  border-color: #e2e8f0;
+  background: #f8fafc;
+  color: #475569;
+}
+
+@media (max-width: 900px) {
+  .ks-summary-grid,
+  .ks-grade-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .kurikulum-sekolah-page {
+    padding: 15px;
+  }
+
+  .ks-header h1 {
+    font-size: 20px;
+  }
+
+  .ks-grade-card {
+    flex-wrap: wrap;
+  }
+}

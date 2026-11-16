@@ -1,0 +1,1241 @@
+
+/* ==========================================
+   SIMKUR SMP
+   HALAMAN MANAJEMEN KURIKULUM
+   VISUAL SYSTEM V3.0
+   ========================================== */
+
+.curriculum-page {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  width: 100%;
+  min-width: 0;
+}
+
+/* ==========================================
+   HEADER HALAMAN
+   ========================================== */
+
+.curriculum-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.curriculum-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 7px;
+  color: var(--simkur-muted);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+.curriculum-heading h2 {
+  color: var(--simkur-navy);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.curriculum-heading p {
+  margin-top: 6px;
+  color: var(--simkur-muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.curriculum-heading-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.curriculum-primary-button,
+.curriculum-secondary-button,
+.curriculum-filter-button,
+.curriculum-add-subject {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 9px 13px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.curriculum-primary-button,
+.curriculum-add-subject {
+  color: white;
+  background: var(--simkur-blue);
+}
+
+.curriculum-primary-button:hover,
+.curriculum-add-subject:hover {
+  background: var(--simkur-navy);
+}
+
+.curriculum-secondary-button,
+.curriculum-filter-button {
+  border-color: var(--simkur-border);
+  color: var(--simkur-navy);
+  background: white;
+}
+
+.curriculum-secondary-button:hover,
+.curriculum-filter-button:hover {
+  border-color: var(--simkur-blue);
+  color: var(--simkur-blue);
+  background: var(--simkur-blue-light);
+}
+
+/* ==========================================
+   INFORMASI KURIKULUM
+   ========================================== */
+
+.curriculum-info-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-height: 105px;
+  padding: 17px 20px;
+  overflow: hidden;
+  border: 1px solid #D4E5F5;
+  border-radius: var(--simkur-radius);
+  background: linear-gradient(
+    105deg,
+    #EAF2FA 0%,
+    #F7FAFE 65%,
+    #FFFFFF 100%
+  );
+}
+
+.curriculum-info-icon {
+  display: grid;
+  place-items: center;
+  width: 53px;
+  height: 53px;
+  flex-shrink: 0;
+  border-radius: 13px;
+  color: white;
+  background: var(--simkur-navy);
+}
+
+.curriculum-info-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.curriculum-info-copy > span {
+  color: var(--simkur-blue);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.curriculum-info-copy h3 {
+  margin-top: 3px;
+  color: var(--simkur-navy);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.curriculum-info-copy p {
+  margin-top: 4px;
+  color: var(--simkur-muted);
+  font-size: 10px;
+}
+
+.curriculum-info-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+  border: 1px solid #D7E8DE;
+  border-radius: 20px;
+  color: var(--simkur-success);
+  background: #F0F8F3;
+  font-size: 9px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.curriculum-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--simkur-success);
+}
+
+/* ==========================================
+   STATISTIK KURIKULUM
+   ========================================== */
+
+.curriculum-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.curriculum-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  min-height: 94px;
+  padding: 15px;
+  border: 1px solid var(--simkur-border);
+  border-radius: var(--simkur-radius);
+  background: white;
+  box-shadow: var(--simkur-shadow);
+}
+
+.curriculum-stat-icon {
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 11px;
+}
+
+.curriculum-stat-icon.blue {
+  color: #2878C8;
+  background: #EAF2FA;
+}
+
+.curriculum-stat-icon.green {
+  color: #23845B;
+  background: #E8F5EF;
+}
+
+.curriculum-stat-icon.purple {
+  color: #7657B8;
+  background: #F0ECFA;
+}
+
+.curriculum-stat-icon.orange {
+  color: #C17B19;
+  background: #FFF3E3;
+}
+
+.curriculum-stat-card > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.curriculum-stat-card span {
+  color: var(--simkur-muted);
+  font-size: 9px;
+}
+
+.curriculum-stat-card strong {
+  overflow-wrap: anywhere;
+  color: var(--simkur-navy);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.curriculum-stat-card small {
+  color: var(--simkur-muted);
+  font-size: 8px;
+  line-height: 1.4;
+}
+
+/* ==========================================
+   AREA KERJA KURIKULUM
+   ========================================== */
+
+.curriculum-workspace {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--simkur-border);
+  border-radius: var(--simkur-radius);
+  background: white;
+  box-shadow: var(--simkur-shadow);
+}
+
+/* TABS */
+
+.curriculum-tabs {
+  display: flex;
+  align-items: stretch;
+  gap: 3px;
+  min-height: 51px;
+  padding: 0 15px;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--simkur-border);
+  scrollbar-width: thin;
+}
+
+.curriculum-tab {
+  position: relative;
+  flex-shrink: 0;
+  padding: 14px 13px;
+  border: 0;
+  background: transparent;
+  color: var(--simkur-muted);
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.curriculum-tab:hover {
+  color: var(--simkur-blue);
+}
+
+.curriculum-tab.active {
+  color: var(--simkur-blue);
+  font-weight: 800;
+}
+
+.curriculum-tab.active::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  left: 10px;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+  background: var(--simkur-blue);
+}
+
+/* CONTENT */
+
+.curriculum-content {
+  padding: 20px;
+  min-width: 0;
+}
+
+.curriculum-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.curriculum-section-heading h3 {
+  color: var(--simkur-navy);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.curriculum-section-heading p {
+  margin-top: 4px;
+  color: var(--simkur-muted);
+  font-size: 10px;
+}
+
+/* GRADE SELECTOR */
+
+.grade-selector {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid var(--simkur-border);
+  border-radius: 9px;
+  background: #FAFCFE;
+}
+
+.grade-selector button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 108px;
+  min-height: 36px;
+  padding: 8px 13px;
+  border: 1px solid var(--simkur-border);
+  border-radius: 7px;
+  color: var(--simkur-muted);
+  background: white;
+  font-size: 10px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.grade-selector button:hover {
+  border-color: var(--simkur-blue);
+  color: var(--simkur-blue);
+}
+
+.grade-selector button.selected {
+  border-color: var(--simkur-blue);
+  color: white;
+  background: var(--simkur-blue);
+}
+
+/* TABLE TOOLBAR */
+
+.curriculum-table-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 12px;
+}
+
+.curriculum-search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 8px;
+  min-width: 170px;
+  max-width: 360px;
+  min-height: 37px;
+  padding: 0 11px;
+  border: 1px solid var(--simkur-border);
+  border-radius: 8px;
+  color: var(--simkur-muted);
+  background: white;
+}
+
+.curriculum-search:focus-within {
+  border-color: var(--simkur-blue);
+  box-shadow: 0 0 0 3px rgba(40,120,200,0.09);
+}
+
+.curriculum-search input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  color: var(--simkur-text);
+  background: transparent;
+  font-size: 10px;
+}
+
+.curriculum-search input::placeholder {
+  color: #9AA8B8;
+}
+
+/* TABLE */
+
+.curriculum-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--simkur-border);
+  border-radius: 9px;
+}
+
+.curriculum-table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.curriculum-table thead {
+  background: #EFF4F9;
+}
+
+.curriculum-table th {
+  padding: 12px 13px;
+  border-bottom: 1px solid var(--simkur-border);
+  color: var(--simkur-navy);
+  font-size: 9px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.curriculum-table td {
+  padding: 12px 13px;
+  border-bottom: 1px solid #EDF1F5;
+  color: var(--simkur-text);
+  font-size: 10px;
+}
+
+.curriculum-table tbody tr {
+  transition: background 0.15s ease;
+}
+
+.curriculum-table tbody tr:hover {
+  background: #F8FBFE;
+}
+
+.curriculum-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.subject-code {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  padding: 5px 7px;
+  border-radius: 6px;
+  color: var(--simkur-blue);
+  background: var(--simkur-blue-light);
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.subject-name {
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.grade-badge {
+  display: inline-block;
+  padding: 5px 8px;
+  border: 1px solid var(--simkur-border);
+  border-radius: 6px;
+  color: var(--simkur-muted);
+  background: white;
+  font-size: 9px;
+}
+
+.subject-category {
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 6px;
+  color: var(--simkur-success);
+  background: #EAF5EF;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.subject-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 5px 7px;
+  border: 0;
+  border-radius: 6px;
+  color: var(--simkur-blue);
+  background: transparent;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.subject-action:hover {
+  background: var(--simkur-blue-light);
+}
+
+.curriculum-empty {
+  height: 100px;
+  color: var(--simkur-muted) !important;
+  text-align: center;
+}
+
+/* TABLE FOOTER */
+
+.curriculum-table-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 12px;
+  color: var(--simkur-muted);
+  font-size: 9px;
+}
+
+/* PLACEHOLDER TAB */
+
+.curriculum-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 330px;
+  padding: 30px;
+  text-align: center;
+}
+
+.curriculum-placeholder-icon {
+  display: grid;
+  place-items: center;
+  width: 65px;
+  height: 65px;
+  margin-bottom: 15px;
+  border-radius: 17px;
+  color: var(--simkur-blue);
+  background: var(--simkur-blue-light);
+}
+
+.curriculum-placeholder h3 {
+  color: var(--simkur-navy);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.curriculum-placeholder p {
+  max-width: 450px;
+  margin-top: 8px;
+  color: var(--simkur-muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+/* INFORMATION FOOTER */
+
+.curriculum-note {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 14px;
+  border: 1px solid #D4E5F5;
+  border-radius: 9px;
+  color: var(--simkur-blue);
+  background: #F4F8FD;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 1050px) {
+  .curriculum-stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 650px) {
+  .curriculum-page {
+    gap: 14px;
+  }
+
+  .curriculum-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .curriculum-heading-actions {
+    width: 100%;
+  }
+
+  .curriculum-heading-actions button {
+    flex: 1;
+  }
+
+  .curriculum-heading h2 {
+    font-size: 19px;
+  }
+
+  .curriculum-info-banner {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 14px;
+  }
+
+  .curriculum-info-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .curriculum-info-copy h3 {
+    font-size: 15px;
+  }
+
+  .curriculum-info-status {
+    margin-left: 59px;
+  }
+
+  .curriculum-stat-grid {
+    gap: 9px;
+  }
+
+  .curriculum-stat-card {
+    align-items: flex-start;
+    gap: 9px;
+    min-height: 90px;
+    padding: 11px;
+  }
+
+  .curriculum-stat-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .curriculum-stat-icon svg {
+    width: 18px;
+  }
+
+  .curriculum-stat-card strong {
+    font-size: 14px;
+  }
+
+  .curriculum-content {
+    padding: 13px;
+  }
+
+  .curriculum-table-toolbar {
+    align-items: stretch;
+  }
+
+  .curriculum-search {
+    max-width: none;
+    flex-basis: 100%;
+  }
+
+  .curriculum-tabs {
+    padding: 0 8px;
+  }
+
+  .curriculum-table-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .curriculum-note {
+    align-items: flex-start;
+  }
+}
+
+/* VERY SMALL SCREEN */
+
+@media (max-width: 380px) {
+  .curriculum-stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grade-selector button {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .curriculum-heading-actions {
+    flex-direction: column;
+  }
+
+  .curriculum-heading-actions button {
+    width: 100%;
+  }
+}
+
+
+/* ==========================================
+   SIMKUR SMP
+   MODERN CURRICULUM SELECTOR
+   ========================================== */
+
+/* PANEL UTAMA */
+
+.curriculum-period-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  width: 100%;
+  padding: 20px 22px;
+  border: 1px solid var(--simkur-border);
+  border-radius: 14px;
+  background: #FFFFFF;
+  box-shadow: var(--simkur-shadow);
+}
+
+/* BAGIAN HEADER */
+
+.curriculum-period-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E9EFF5;
+}
+
+.curriculum-period-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.period-title-icon,
+.choice-heading-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: #2878C8;
+  background: #EAF2FA;
+  border-radius: 11px;
+}
+
+.period-title-icon {
+  width: 43px;
+  height: 43px;
+}
+
+.curriculum-period-title strong {
+  display: block;
+  color: #173B68;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.curriculum-period-title span {
+  display: block;
+  margin-top: 4px;
+  color: #68788C;
+  font-size: 10px;
+}
+
+/* PILIHAN TAHUN AJARAN */
+
+.curriculum-year-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 175px;
+}
+
+.curriculum-year-control > label {
+  color: #68788C;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.curriculum-year-select {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 40px;
+  padding: 0 11px;
+  border: 1px solid #D9E2EC;
+  border-radius: 9px;
+  background: #F9FBFD;
+  color: #2878C8;
+  transition: all 0.2s ease;
+}
+
+.curriculum-year-select:focus-within {
+  border-color: #2878C8;
+  box-shadow: 0 0 0 3px rgba(40, 120, 200, 0.09);
+}
+
+.curriculum-year-select select {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  appearance: none;
+  background: transparent;
+  color: #173B68;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* GRID PEMILIHAN */
+
+.curriculum-choice-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr);
+  gap: 25px;
+}
+
+.curriculum-choice-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.curriculum-choice-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.choice-heading-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+}
+
+.curriculum-choice-heading strong {
+  display: block;
+  color: #173B68;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.curriculum-choice-heading span {
+  display: block;
+  margin-top: 3px;
+  color: #8190A1;
+  font-size: 9px;
+}
+
+/* KARTU PILIHAN KELAS */
+
+.curriculum-grade-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.curriculum-option-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 9px;
+  min-width: 0;
+  min-height: 105px;
+  padding: 12px;
+  overflow: hidden;
+  border: 1px solid #DCE5EE;
+  border-radius: 11px;
+  background: #FAFCFE;
+  text-align: left;
+  transition: border-color 0.2s ease,
+              background 0.2s ease,
+              box-shadow 0.2s ease,
+              transform 0.2s ease;
+}
+
+.curriculum-option-card:hover {
+  border-color: #8AB9E5;
+  background: #F3F8FD;
+  transform: translateY(-2px);
+}
+
+.curriculum-option-card.selected {
+  border: 1.5px solid #2878C8;
+  background: linear-gradient(145deg, #EAF3FC, #F8FBFF);
+  box-shadow: 0 3px 10px rgba(40, 120, 200, 0.10);
+}
+
+.curriculum-option-code {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  color: #2878C8;
+  background: #EAF2FA;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.curriculum-option-card.selected .curriculum-option-code {
+  color: #FFFFFF;
+  background: #2878C8;
+}
+
+.curriculum-option-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.curriculum-option-copy strong {
+  color: #173B68;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.curriculum-option-copy small {
+  color: #8190A1;
+  font-size: 9px;
+}
+
+/* INDIKATOR PILIHAN */
+
+.curriculum-option-check {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  display: grid;
+  place-items: center;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  color: white;
+  background: #2878C8;
+}
+
+/* KARTU JENIS KURIKULUM */
+
+.curriculum-type-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.curriculum-type-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+  min-height: 105px;
+  padding: 14px;
+  padding-right: 35px;
+  border: 1px solid #DCE5EE;
+  border-radius: 11px;
+  background: #FAFCFE;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.curriculum-type-card:hover {
+  border-color: #8AB9E5;
+  background: #F3F8FD;
+  transform: translateY(-2px);
+}
+
+.curriculum-type-card.selected {
+  border: 1.5px solid #2878C8;
+  background: linear-gradient(145deg, #EAF3FC, #F8FBFF);
+  box-shadow: 0 3px 10px rgba(40, 120, 200, 0.10);
+}
+
+.curriculum-type-icon {
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 11px;
+  color: #2878C8;
+  background: #EAF2FA;
+}
+
+.curriculum-type-card.selected .curriculum-type-icon {
+  color: white;
+  background: #2878C8;
+}
+
+.curriculum-type-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.curriculum-type-copy strong {
+  color: #173B68;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.curriculum-type-copy small {
+  color: #8190A1;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+/* CATATAN PENGATURAN */
+
+.curriculum-setting-note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid #DCEAF7;
+  border-radius: 8px;
+  color: #52769B;
+  background: #F4F8FD;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.curriculum-setting-note svg {
+  flex-shrink: 0;
+  color: #2878C8;
+}
+
+/* ==========================================
+   RESPONSIVE TABLET
+   ========================================== */
+
+@media (max-width: 950px) {
+  .curriculum-choice-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* ==========================================
+   RESPONSIVE MOBILE
+   ========================================== */
+
+@media (max-width: 600px) {
+  .curriculum-period-panel {
+    gap: 16px;
+    padding: 15px;
+  }
+
+  .curriculum-period-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .curriculum-year-control {
+    width: 100%;
+  }
+
+  .curriculum-grade-options {
+    gap: 7px;
+  }
+
+  .curriculum-option-card {
+    min-height: 94px;
+    padding: 9px;
+  }
+
+  .curriculum-type-options {
+    grid-template-columns: 1fr;
+  }
+
+  .curriculum-type-card {
+    min-height: 76px;
+  }
+}
+
+@media (max-width: 360px) {
+  .curriculum-grade-options {
+    grid-template-columns: 1fr;
+  }
+
+  .curriculum-option-card {
+    flex-direction: row;
+    align-items: center;
+    min-height: 65px;
+  }
+}
+
+
+/* MODAL FORM MATA PELAJARAN */
+.subject-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.subject-modal {
+  width: 100%;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.subject-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.subject-modal-header h3 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  color: #172554;
+}
+
+.subject-modal-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.subject-modal-header > button {
+  border: none;
+  background: #f1f5f9;
+  color: #475569;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.subject-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subject-modal form label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  margin-top: 8px;
+}
+
+.subject-modal form input,
+.subject-modal form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1e293b;
+  background: #ffffff;
+}
+
+.subject-modal form input:focus,
+.subject-modal form select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.subject-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.subject-modal-actions button {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.subject-modal-actions button[type="button"] {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.subject-modal-actions button[type="submit"] {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.subject-modal-actions button:hover {
+  opacity: 0.88;
+}

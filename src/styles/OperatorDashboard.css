@@ -1,0 +1,371 @@
+
+.operator-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  color: #243449;
+}
+
+.operator-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 27px 30px;
+  border-radius: 17px;
+  background: linear-gradient(120deg, #123e70, #2878c8);
+  color: white;
+}
+
+.operator-eyebrow {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  opacity: 0.8;
+}
+
+.operator-welcome h2 {
+  margin: 10px 0 7px;
+  font-size: 24px;
+}
+
+.operator-welcome p {
+  margin: 0;
+  max-width: 620px;
+  font-size: 13px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.operator-welcome-icon {
+  width: 66px;
+  height: 66px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.15);
+  flex-shrink: 0;
+}
+
+.operator-school-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+  padding: 22px;
+  border: 1px solid #e3eaf2;
+  border-radius: 15px;
+  background: white;
+}
+
+.operator-school-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  color: #2878c8;
+  background: #eaf3ff;
+  border-radius: 13px;
+  flex-shrink: 0;
+}
+
+.operator-school-info {
+  min-width: 0;
+}
+
+.operator-school-info > span {
+  color: #718096;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.operator-school-info h3 {
+  margin: 6px 0 9px;
+  font-size: 19px;
+  color: #243449;
+}
+
+.operator-school-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.operator-school-meta span {
+  padding: 5px 9px;
+  border-radius: 6px;
+  background: #f0f5fa;
+  color: #50647b;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.operator-school-info p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 11px 0 0;
+  color: #718096;
+  font-size: 12px;
+}
+
+.operator-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.operator-stat-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 19px;
+  background: white;
+  border: 1px solid #e5ebf2;
+  border-radius: 14px;
+  min-width: 0;
+}
+
+.operator-stat-icon {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.operator-stat-icon.blue {
+  color: #2878c8;
+  background: #eaf3ff;
+}
+
+.operator-stat-icon.green {
+  color: #169b68;
+  background: #e7f8ef;
+}
+
+.operator-stat-icon.purple {
+  color: #8056c7;
+  background: #f1ebff;
+}
+
+.operator-stat-icon.orange {
+  color: #d58a24;
+  background: #fff3df;
+}
+
+.operator-stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.operator-stat-info span {
+  color: #718096;
+  font-size: 11px;
+}
+
+.operator-stat-info strong {
+  color: #243449;
+  font-size: 25px;
+}
+
+.operator-stat-info small {
+  color: #8290a1;
+  font-size: 10px;
+}
+
+.operator-content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.operator-panel {
+  padding: 21px;
+  background: white;
+  border: 1px solid #e5ebf2;
+  border-radius: 15px;
+  min-width: 0;
+}
+
+.operator-panel-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.operator-panel-heading h3 {
+  margin: 0;
+  font-size: 15px;
+  color: #243449;
+}
+
+.operator-panel-heading p {
+  margin: 6px 0 0;
+  color: #8290a1;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.operator-panel-heading > svg {
+  color: #2878c8;
+  flex-shrink: 0;
+}
+
+.operator-placement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 23px;
+}
+
+.operator-placement-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 15px;
+  background: #eaf8f1;
+  border-radius: 11px;
+  color: #169b68;
+}
+
+.operator-placement-item.warning {
+  background: #fff5e7;
+  color: #d58a24;
+}
+
+.operator-placement-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.operator-placement-item span {
+  font-size: 10px;
+  color: #68788c;
+}
+
+.operator-placement-item strong {
+  font-size: 22px;
+  color: #243449;
+}
+
+.operator-info-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 15px;
+  padding: 11px;
+  background: #fff7e9;
+  border-radius: 9px;
+  color: #a66d1e;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.operator-info-note svg {
+  flex-shrink: 0;
+}
+
+.operator-year-label {
+  margin-top: 14px;
+  color: #718096;
+  font-size: 11px;
+}
+
+.operator-integration-status {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin-top: 24px;
+}
+
+.operator-integration-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  color: #d58a24;
+  background: #fff3df;
+  border-radius: 11px;
+  flex-shrink: 0;
+}
+
+.operator-integration-status > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.operator-integration-status strong {
+  color: #a66d1e;
+  font-size: 13px;
+}
+
+.operator-integration-status span {
+  color: #718096;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.operator-integration-footer {
+  margin-top: 19px;
+  padding-top: 13px;
+  border-top: 1px solid #edf0f4;
+  color: #8290a1;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.operator-update-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  background: #edf7ff;
+  color: #3974a9;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+  .operator-stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .operator-welcome {
+    padding: 21px;
+  }
+
+  .operator-welcome h2 {
+    font-size: 19px;
+  }
+
+  .operator-welcome-icon {
+    display: none;
+  }
+
+  .operator-stat-grid,
+  .operator-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .operator-school-card {
+    padding: 16px;
+  }
+
+  .operator-school-info h3 {
+    font-size: 16px;
+  }
+
+  .operator-placement-grid {
+    grid-template-columns: 1fr;
+  }
+}

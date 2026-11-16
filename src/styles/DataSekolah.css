@@ -1,0 +1,479 @@
+
+.ds-page {
+  width: 100%;
+  color: #24364b;
+  animation: dsFadeIn 0.25s ease;
+}
+
+@keyframes dsFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ds-welcome {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 25px;
+  background: linear-gradient(120deg, #173b68, #245b91);
+  border-radius: 14px;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+
+.ds-welcome-icon {
+  width: 58px;
+  height: 58px;
+  min-width: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.ds-eyebrow {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  color: #c6ddf5;
+  margin-bottom: 6px;
+}
+
+.ds-welcome-text h2 {
+  margin: 0 0 7px;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.ds-welcome-text p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #e1edf8;
+}
+
+.ds-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.ds-info-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #e1e8f0;
+  border-radius: 12px;
+  min-width: 0;
+}
+
+.ds-info-icon {
+  width: 43px;
+  height: 43px;
+  min-width: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: #edf4fb;
+  color: #245b91;
+}
+
+.ds-info-card span {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #718096;
+  margin-bottom: 6px;
+}
+
+.ds-info-card strong {
+  display: block;
+  font-size: 14px;
+  color: #24364b;
+}
+
+.ds-section-heading {
+  margin-bottom: 16px;
+}
+
+.ds-section-heading h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  color: #173b68;
+}
+
+.ds-section-heading p {
+  margin: 0;
+  color: #718096;
+  font-size: 13px;
+}
+
+.ds-module-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.ds-module-card {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 19px;
+  background: #ffffff;
+  border: 1px solid #e1e8f0;
+  border-radius: 12px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ds-module-card:hover {
+  border-color: #a9c5e1;
+  box-shadow: 0 4px 14px rgba(31, 67, 105, 0.06);
+}
+
+.ds-module-number {
+  font-size: 12px;
+  font-weight: 700;
+  color: #91a4b8;
+}
+
+.ds-module-icon {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edf4fb;
+  color: #245b91;
+  border-radius: 11px;
+}
+
+.ds-module-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.ds-module-content h3 {
+  margin: 0 0 6px;
+  color: #24364b;
+  font-size: 15px;
+}
+
+.ds-module-content p {
+  margin: 0 0 7px;
+  color: #718096;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.ds-module-content > span {
+  color: #245b91;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.ds-module-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #8996a5;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.ds-module-arrow {
+  display: flex;
+  color: #9aa9b8;
+}
+
+.ds-footer-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 22px;
+  padding: 15px 17px;
+  background: #f1f6fb;
+  border: 1px solid #dce8f3;
+  border-radius: 10px;
+  color: #54718e;
+}
+
+.ds-footer-note svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.ds-footer-note p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .ds-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .ds-welcome {
+    align-items: flex-start;
+    padding: 19px;
+  }
+
+  .ds-welcome-icon {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+  }
+
+  .ds-welcome-text h2 {
+    font-size: 19px;
+  }
+
+  .ds-module-card {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .ds-module-content {
+    flex-basis: calc(100% - 75px);
+  }
+
+  .ds-module-status {
+    margin-left: 75px;
+  }
+
+  .ds-module-arrow {
+    margin-left: auto;
+  }
+}
+
+
+/* ==========================================
+   FORM IDENTITAS SEKOLAH
+   ========================================== */
+
+.ds-access-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 18px;
+  margin-bottom: 20px;
+  background: #f1f6fb;
+  border: 1px solid #dce8f3;
+  border-radius: 11px;
+  color: #245b91;
+}
+
+.ds-access-info svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.ds-access-info strong {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.ds-access-info p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #61778e;
+}
+
+.ds-form-card {
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #e1e8f0;
+  border-radius: 13px;
+}
+
+.ds-form-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.ds-form-heading-icon {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #edf4fb;
+  color: #245b91;
+}
+
+.ds-form-heading h3 {
+  margin: 0 0 5px;
+  font-size: 15px;
+  color: #24364b;
+}
+
+.ds-form-heading p {
+  margin: 0;
+  font-size: 12px;
+  color: #718096;
+}
+
+.ds-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ds-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.ds-form-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #40546b;
+}
+
+.ds-form-group input,
+.ds-form-group select {
+  width: 100%;
+  min-height: 43px;
+  padding: 10px 12px;
+  border: 1px solid #dce4ed;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #24364b;
+  font-family: inherit;
+  font-size: 13px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ds-form-group input:focus,
+.ds-form-group select:focus {
+  border-color: #4381ba;
+  box-shadow: 0 0 0 3px rgba(67, 129, 186, 0.1);
+}
+
+.ds-form-group input[readonly],
+.ds-form-group select:disabled {
+  background: #f5f7fa;
+  color: #64748b;
+  cursor: default;
+}
+
+.ds-form-divider {
+  height: 1px;
+  background: #e8edf2;
+  margin: 27px 0;
+}
+
+.ds-form-message {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 14px;
+  margin-top: 22px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.ds-form-message.success {
+  color: #18794e;
+  background: #edf9f2;
+  border: 1px solid #ccebd8;
+}
+
+.ds-form-message.error {
+  color: #b42318;
+  background: #fff1f0;
+  border: 1px solid #f5d0cc;
+}
+
+.ds-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #e8edf2;
+}
+
+.ds-btn-cancel,
+.ds-btn-save {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 17px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ds-btn-cancel {
+  color: #526579;
+  background: #ffffff;
+  border: 1px solid #dce4ed;
+}
+
+.ds-btn-cancel:hover {
+  background: #f5f7fa;
+}
+
+.ds-btn-save {
+  color: #ffffff;
+  background: #245b91;
+  border: 1px solid #245b91;
+}
+
+.ds-btn-save:hover {
+  background: #173f68;
+  border-color: #173f68;
+}
+
+@media (max-width: 650px) {
+  .ds-form-card {
+    padding: 17px;
+  }
+
+  .ds-form-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .ds-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .ds-btn-cancel,
+  .ds-btn-save {
+    width: 100%;
+  }
+}
