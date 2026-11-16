@@ -1,0 +1,11 @@
+{
+  "version": "0.1.1",
+  "notes": "SIMKUR 0.1.1 - Rilis awal dengan dukungan pembaruan otomatis aplikasi Windows.",
+  "pub_date": "2026-11-16T10:04:27Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUU3FLR0VmOTl2bEdFbjRWYUYzMlJpbjI4MkRxSW42U3JLUGYzTm9Eb042NWlpUTR3MVFrWjFENXhYdGZTcjdMZTYyQnhoeUpNblQxUlUxc3NNTm9BODR3R1FUdEUyeFEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0ODIzNDY3CWZpbGU6U0lNS1VSXzAuMS4xX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjEuMQpCdk4rMjZlUFhMMTQ5eldqZm4xMHVpTStlTllmU0VJd3J1NEdaYzMwTWkzdDNrbDZjbURQV1kvVWVUa0l0NXlTQ1JyaGY5U00rS3AwWGl4Wm9zaHNBUT09Cg==",
+      "url": "https://github.com/nizarhanan621-glitch/SIMKUR/releases/download/v0.1.1/SIMKUR_0.1.1_x64-setup.exe"
+    }
+  }
+}
